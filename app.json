@@ -17,7 +17,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "$(PRODUCT_NAME) uses the camera for AR functionality"
+      },
+      "bundleIdentifier": "com.brunokiafuka.viro-expo"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,6 +31,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "@viro-community/react-viro"
+    ]
   }
 }
